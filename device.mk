@@ -440,7 +440,7 @@ PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     hardware/mediatek \
     hardware/mediatek/libmtkperf_client \
-    hardware/lineage/interfaces/power-libperfmgr \
+    hardware/infinity/interfaces/power-libperfmgr \
     hardware/google/interfaces \
     hardware/google/pixel \
     hardware/transsion
@@ -464,6 +464,7 @@ PRODUCT_PACKAGES += \
     android.hardware.usb.gadget-service.mediatek
     
 # Vibrator
+TARGET_VIBRATOR_SUPPORTS_EFFECTS := true
 PRODUCT_PACKAGES += \
     android.hardware.vibrator-service.mediatek
 

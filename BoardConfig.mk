@@ -129,13 +129,15 @@ TARGET_COPY_OUT_VENDOR_DLKM := vendor_dlkm
 # Platform
 TARGET_BOARD_PLATFORM := mt6789
 BOARD_HAS_MTK_HARDWARE := true
+BOARD_HAVE_MTK_FM := true
 
 # Power
 TARGET_TAP_TO_WAKE_NODE := "/proc/gesture_function"
 TARGET_POWER_LIBPERFMGR_MODE_EXTENSION_LIB := //$(DEVICE_PATH):libperfmgr-ext-transsion
 
 # Properties
-TARGET_SYSTEM_PROP += $(CONFIGS_PATH)/properties/system.prop
+TARGET_SYSTEM_PROP += $(CONFIGS_PATH)/properties/system.prop \
+                      $(CONFIGS_PATH)/properties/phoneinfo.prop
 TARGET_VENDOR_PROP += $(CONFIGS_PATH)/properties/vendor.prop
 
 # Recovery
@@ -195,7 +197,7 @@ BOARD_VNDK_VERSION := current
 # VINTF
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
 	$(CONFIGS_PATH)/vintf/framework_compatibility_matrix.xml \
-	vendor/lineage/config/device_framework_matrix.xml
+	vendor/infinity/config/device_framework_matrix.xml
 DEVICE_MANIFEST_FILE := $(CONFIGS_PATH)/vintf/manifest.xml
 DEVICE_MATRIX_FILE := $(CONFIGS_PATH)/vintf/compatibility_matrix.xml
 
