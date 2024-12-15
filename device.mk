@@ -255,10 +255,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.lights-service.transsion
 
-# Lineage-Specific Overlays
-PRODUCT_PACKAGES += \
-	ApertureOverlay
-
 # Media
 PRODUCT_PACKAGES += \
     android.hardware.media.c2@1.0.vendor:64 \
