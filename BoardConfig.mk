@@ -80,6 +80,10 @@ BOARD_VENDOR_RAMDISK_KERNEL_MODULES := $(sort $(BOARD_VENDOR_RAMDISK_KERNEL_MODU
 BOARD_VENDOR_KERNEL_MODULES_LOAD := $(strip $(shell cat $(KERNEL_PATH)/vendor_dlkm/modules.load))
 BOARD_VENDOR_KERNEL_MODULES := $(wildcard $(KERNEL_PATH)/vendor_dlkm/*.ko)
 
+# Lineage Health
+TARGET_HEALTH_CHARGING_CONTROL_CHARGING_PATH := /sys/devices/platform/charger/tran_aichg_disable_charger
+TARGET_HEALTH_CHARGING_CONTROL_SUPPORTS_BYPASS := true
+
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 262144 # BOARD_KERNEL_PAGESIZE * 64
 BOARD_DTBOIMG_PARTITION_SIZE := 33554432
@@ -136,8 +140,7 @@ TARGET_TAP_TO_WAKE_NODE := "/proc/gesture_function"
 TARGET_POWER_LIBPERFMGR_MODE_EXTENSION_LIB := //$(DEVICE_PATH):libperfmgr-ext-transsion
 
 # Properties
-TARGET_SYSTEM_PROP += $(CONFIGS_PATH)/properties/system.prop \
-                      $(CONFIGS_PATH)/properties/phoneinfo.prop
+TARGET_SYSTEM_PROP += $(CONFIGS_PATH)/properties/system.prop
 TARGET_VENDOR_PROP += $(CONFIGS_PATH)/properties/vendor.prop
 
 # Recovery
@@ -197,7 +200,7 @@ BOARD_VNDK_VERSION := current
 # VINTF
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
 	$(CONFIGS_PATH)/vintf/framework_compatibility_matrix.xml \
-	vendor/infinity/config/device_framework_matrix.xml
+	vendor/lineage/config/device_framework_matrix.xml
 DEVICE_MANIFEST_FILE := $(CONFIGS_PATH)/vintf/manifest.xml
 DEVICE_MATRIX_FILE := $(CONFIGS_PATH)/vintf/compatibility_matrix.xml
 

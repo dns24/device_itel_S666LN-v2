@@ -16,6 +16,7 @@ ro.config.vc_call_vol_steps=11
 ro.vendor.mtk_audio_alac_support=1
 ro.vendor.mtk_audio_tuning_tool_ver=V1
 ro.vendor.mtk_audio_ape_support=1
+ro.vendor.mtk_besloudness_support=1
 ro.vendor.mtk_hifiaudio_support=1
 
 # Bluetooth

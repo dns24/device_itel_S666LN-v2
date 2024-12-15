@@ -48,6 +48,7 @@ ro.vendor.mtk_flv_playback_support=1
 # Misc
 Build.BRAND=MTK
 ro.transsion.tranfs.path=/tranfs
+ro.os_game_bypass_charging_support=1
 
 # Perf
 ro.mtk_perf_fast_start_win=1
