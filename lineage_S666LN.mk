@@ -12,9 +12,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Riseup!
+RISING_MAINTAINER := "attack_dns24"
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    RISING_CHIPSET="Mediatek Helio G99" \
-    RISING_MAINTAINER="attack_dns24"
+    RisingChipset="Mediatek Helio G99" \
+    RisingMaintainer="attack_dns24"
 PRODUCT_NO_CAMERA := true
 TARGET_ENABLE_BLUR := true
 TARGET_PREBUILT_LAWNCHAIR_LAUNCHER := true
@@ -33,4 +34,4 @@ PRODUCT_MODEL := itel S666LN
 PRODUCT_GMS_CLIENTID_BASE := android-transsion
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME=S666LN-OP
+    DeviceProduct=S666LN-OP
