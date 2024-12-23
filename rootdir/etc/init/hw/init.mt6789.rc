@@ -1077,16 +1077,6 @@ on property:persist.vendor.mediatek.fast_charging.support=*
     chmod 0666 /sys/devices/platform/pca_dv2_algo/super_fast_charge_thermal
     chown system system /sys/devices/platform/pca_dv2_algo/super_fast_charge_thermal
 
-service vendor.charger /system/bin/charger
-    class charger
-    user system
-    group system graphics wakelock input
-    capabilities SYS_BOOT
-    file /dev/kmsg w
-    file /sys/fs/pstore/console-ramoops-0 r
-    file /sys/fs/pstore/console-ramoops r
-    file /proc/last_kmsg r
-#    
 # FPSGO FBT Game
 on boot
     insmod /vendor/lib/modules/fpsgo.ko
