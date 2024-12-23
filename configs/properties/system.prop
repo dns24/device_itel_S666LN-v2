@@ -2,7 +2,8 @@
 ro.vendor.have_aee_feature=1
 
 # Audio
-audio.offload.disable=true
+audio.offload.disable=1
+audio.offload.gapless.enabled=true
 vendor.af.dynamic.sleeptime.enable=true
 vendor.af.pausewait.enable=false
 vendor.af.threshold.src_and_effect_count=5
