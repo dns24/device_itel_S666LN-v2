@@ -79,7 +79,6 @@ PRODUCT_PACKAGES += \
     libprocessgroup.vendor
 
 PRODUCT_PACKAGES += \
-    BesLoudness \
     MtkInCallService
 
 PRODUCT_COPY_FILES += \
@@ -188,10 +187,10 @@ PRODUCT_PACKAGES += \
 
 # Health
 PRODUCT_PACKAGES += \
-    android.hardware.health@2.1-impl \
-    android.hardware.health@2.1-impl.recovery \
-    android.hardware.health@2.1-service
-
+    android.hardware.health-service.mediatek \
+    android.hardware.health-service.mediatek-recovery \
+    charger_res_images_vendor
+    
 # HIDL
 PRODUCT_PACKAGES += \
     android.hidl.base@1.0 \
@@ -313,6 +312,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/nfc/libnfc-nxp_RF.conf:$(TARGET_COPY_OUT_VENDOR)/libnfc-nxp_RF.conf
 
 # Overlays
+DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay-lineage
+
 PRODUCT_ENFORCE_RRO_TARGETS := *
 PRODUCT_PACKAGES += \
     FrameworksResTarget \
@@ -446,7 +448,7 @@ PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     hardware/mediatek \
     hardware/mediatek/libmtkperf_client \
-    hardware/infinity/interfaces/power-libperfmgr \
+    hardware/lineage/interfaces/power-libperfmgr \
     hardware/google/interfaces \
     hardware/google/pixel \
     hardware/transsion
