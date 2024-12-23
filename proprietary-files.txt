@@ -1764,6 +1764,11 @@ vendor/etc/vintf/manifest/vendor.transsion.hardware.trancam.trancamserver@1.0.xm
 vendor/lib/vendor.transsion.hardware.trancam.trancamserver@1.0.so
 vendor/lib64/vendor.transsion.hardware.trancam.trancamserver@1.0.so
 
+# Charger
+bin/kpoc_charger
+etc/init/kpoc_charger.rc
+lib64/libshowlogo.so
+
 # Connectivity
 vendor/bin/wmt_launcher
 vendor/bin/wmt_loader
@@ -1907,6 +1912,17 @@ vendor/lib64/liboemcrypto.so
 vendor/lib64/libtlcWidevineModularDrm.so
 vendor/lib64/liburee_meta_drmkeyinstall.so
 -vendor/lib64/libwvhidl.so;REPLACEDEP=libprotobuf-cpp-full-3.9.1:libprotobuf-cpp-full-3.9.1-vendorcompat
+
+# EngineerMode - from v1248
+-system_ext/lib/libem_support_jni.so
+-system_ext/lib64/libem_support_jni.so
+system_ext/app/EngineerMode/EngineerMode.apk
+-vendor/bin/em_hidl
+vendor/etc/init/em_hidl_user.rc
+-vendor/lib64/vendor.mediatek.hardware.engineermode@1.0.so
+-vendor/lib64/vendor.mediatek.hardware.engineermode@1.1.so
+-vendor/lib64/vendor.mediatek.hardware.engineermode@1.2.so
+-vendor/lib64/vendor.mediatek.hardware.engineermode@1.3.so
 
 # Fingerprint
 vendor/etc/init/vendor.fpsensor.rc
