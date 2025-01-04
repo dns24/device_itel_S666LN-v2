@@ -8,20 +8,16 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common RisingOS stuff.
+# Inherit some common MistOS stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-# Riseup!
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    RisingChipset="Mediatek Helio G99" \
-    RisingMaintainer="attack_dns24"
-PRODUCT_NO_CAMERA := false
-TARGET_ENABLE_BLUR := true
-TARGET_CORE_GMS := true
-TARGET_CORE_GMS_EXTRAS := true
-PRODUCT_PACKAGES += \
-    com.google.android.dialer.support
+# Build flags
+TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_EXCLUDES_AUDIOFX := true
 WITH_GMS := true
+MISTOS_MAINTAINER=attack_dns24
+PRODUCT_NO_CAMERA := true
+TARGET_ENABLE_BLUR := true
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1612
@@ -43,4 +39,4 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildDesc="sys_tssi_64_armv82_itel-user 13 TP1A.220624.014 607469 release-keys" \
     BuildFingerprint=Itel/S666LN-OP/itel-S666LN:13/TP1A.220624.014/240513V1350:user/release-keys \
     DeviceProduct=S666LN-OP \
-    DeviceName=itel-S666LN    
+    DeviceName=itel-S666LN
