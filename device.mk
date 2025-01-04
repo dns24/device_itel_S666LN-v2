@@ -241,6 +241,12 @@ PRODUCT_PACKAGES += \
 # Include GSI keys
 $(call inherit-product, $(SRC_TARGET_DIR)/product/developer_gsi_keys.mk)
 
+# Include Moto Dolby
+$(call inherit-product, vendor/motorola-dolby/setup.mk)
+
+# Include releasekeys
+-include vendor/lineage-priv/keys/keys.mk
+
 # Keylayout
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/keylayout/mtk-tpd.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/mtk-tpd.kl
