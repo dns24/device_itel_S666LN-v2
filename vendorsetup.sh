@@ -9,10 +9,10 @@ git clone -b lineage-22 https://github.com/mt6789-transsion/hardware_transsion h
 
 # Clone Device Hardware Mediatek
 rm -rf hardware/mediatek
-git clone -b lineage-22.0 https://github.com/LineageOS/android_hardware_mediatek hardware/mediatek
+git clone -b lineage-22.1 https://github.com/LineageOS/android_hardware_mediatek hardware/mediatek
 
 # Clone Device Mediatek Sepolicy Vendor
 git clone -b lineage-22.1 https://github.com/LineageOS/android_device_mediatek_sepolicy_vndr device/mediatek/sepolicy_vndr
 
 # Clone Moto Dolby
-git clone -b v1.3 https://github.com/userariii/vendor_motorola-dolby vendor/motorola-dolby
+git clone -b v1.2 https://github.com/userariii/vendor_motorola-dolby vendor/motorola-dolby
