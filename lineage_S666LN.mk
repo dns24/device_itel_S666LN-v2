@@ -13,8 +13,8 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Riseup!
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    RISING_CHIPSET="Mediatek Helio G99" \
-    RISING_MAINTAINER="attack_dns24"
+    RisingChipset="Mediatek Helio G99" \
+    RisingMaintainer="attack_dns24"
 PRODUCT_NO_CAMERA := true
 TARGET_ENABLE_BLUR := true
 WITH_GMS := true
