@@ -9,7 +9,7 @@ git clone -b lineage-22 https://github.com/mt6789-transsion/hardware_transsion h
 
 # Clone Device Hardware Mediatek
 rm -rf hardware/mediatek
-git clone -b lineage-22.1 https://github.com/LineageOS/android_hardware_mediatek hardware/mediatek
+git clone -b lineage-22.1 https://github.com/dns24/android_hardware_mediatek hardware/mediatek
 
 # Clone Device Mediatek Sepolicy Vendor
 git clone -b lineage-22.1 https://github.com/LineageOS/android_device_mediatek_sepolicy_vndr device/mediatek/sepolicy_vndr
