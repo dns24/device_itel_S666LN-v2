@@ -33,6 +33,9 @@ ro.charger.enable_suspend=true
 # Dalvik
 dalvik.vm.dex2oat64.enabled=true
 
+# Display
+debug.performance.tuning=1
+
 # Game FPS  Limit
 debug.graphics.game_default_frame_rate.disabled=true
 
