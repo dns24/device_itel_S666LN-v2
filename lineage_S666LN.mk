@@ -11,8 +11,15 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-# GApps
+# Riseup!
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    RisingChipset="Mediatek Helio G99" \
+    RisingMaintainer="attack_dns24"
+PRODUCT_NO_CAMERA := true
+TARGET_ENABLE_BLUR := true
 WITH_GMS := true
+TARGET_DEFAULT_PIXEL_LAUNCHER := true
+TARGET_INCLUDE_GOOGLE_DIALER := true
 
 # Inherit from S666LN device
 $(call inherit-product, device/itel/S666LN/device.mk)
