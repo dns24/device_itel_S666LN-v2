@@ -11,8 +11,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-# GApps
-WITH_GMS := true
+# Boot animation
+TARGET_BOOT_ANIMATION_RES := 1080
+
+# Build flags
+TARGET_USES_PICO_GAPPS := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_SUPPORTS_QUICK_TAP := true
 
 # Inherit from S666LN device
 $(call inherit-product, device/itel/S666LN/device.mk)
