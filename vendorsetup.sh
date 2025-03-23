@@ -1,5 +1,5 @@
 # Clone Device Kernel Tree
-git clone -b lineage-21 https://github.com/mt6789-transsion/device_itel_S666LN-kernel device/itel/S666LN-kernel
+git clone -b lineage-21 https://github.com/dns24/kernel_itel_S666LN device/itel/S666LN-kernel
 
 # Clone Device Vendor Tree
 git clone -b lineage-21 https://github.com/dns24/vendor_itel_S666LN vendor/itel/S666LN
