@@ -8,24 +8,25 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common Lineage stuff.
+# Inherit some common Orion stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-# Riseup!
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    RisingChipset="Mediatek Helio G99" \
-    RisingMaintainer="attack_dns24"
-PRODUCT_NO_CAMERA := true
-TARGET_ENABLE_BLUR := true
-WITH_GMS := true
-TARGET_DEFAULT_PIXEL_LAUNCHER := true
-TARGET_INCLUDE_GOOGLE_DIALER := true
+# Boot animation
+TARGET_BOOT_ANIMATION_RES := 720
+
+# OrionOS flags
+ORION_BUILD_TYPE := OFFICIAL
+ORION_MAINTAINER := attack_dns24
+ORION_MAINTAINER_LINK := https://t.me/attack_dns24
+ORION_GAPPS := true
+ORION_BUILD_GOOGLE_TELEPHONY := true
+TARGET_ENABLE_BLUR := false
 
 # Inherit from S666LN device
 $(call inherit-product, device/itel/S666LN/device.mk)
 
 BOARD_VENDOR := Itel
-PRODUCT_NAME := lineage_S666LN
+PRODUCT_NAME := orion_S666LN
 PRODUCT_DEVICE := S666LN
 PRODUCT_MANUFACTURER := ITEL
 PRODUCT_BRAND := Itel
@@ -34,7 +35,8 @@ PRODUCT_MODEL := itel S666LN
 PRODUCT_GMS_CLIENTID_BASE := android-transsion
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BuildDesc="sys_tssi_64_armv82_itel-user 13 TP1A.220624.014 607469 release-keys" \
-    BuildFingerprint=Itel/S666LN-OP/itel-S666LN:13/TP1A.220624.014/240513V1350:user/release-keys \
-    DeviceProduct=S666LN-OP \
-    DeviceName=itel-S666LN
+    PRIVATE_BUILD_DESC="sys_tssi_64_armv82_itel-user 13 TP1A.220624.014 607469 release-keys" \
+    PRODUCT_DEVICE=itel-S666LN \
+    PRODUCT_NAME=S666LN-OP
+
+BUILD_FINGERPRINT := "Itel/S666LN-OP/itel-S666LN:13/TP1A.220624.014/240513V1350:user/release-keys"
