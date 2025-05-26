@@ -74,9 +74,10 @@ BOARD_PREBUILT_DTBIMAGE_DIR := $(KERNEL_PATH)/dtb
 TARGET_SCREEN_DENSITY := 292
 
 # Lineage Health
-TARGET_HEALTH_CHARGING_CONTROL_CHARGING_PATH := /sys/devices/platform/charger/tran_aichg_disable_charger
-TARGET_HEALTH_CHARGING_CONTROL_CHARGING_ENABLED := 0
-TARGET_HEALTH_CHARGING_CONTROL_CHARGING_DISABLED := 1
+$(call soong_config_set,lineage_health,charging_control_charging_disabled,1)
+$(call soong_config_set,lineage_health,charging_control_charging_enabled,0)
+$(call soong_config_set,lineage_health,charging_control_charging_path,/sys/devices/platform/charger/tran_aichg_disable_charger)
+$(call soong_config_set,lineage_health,charging_control_supports_bypass,true)
 
 # Kernel
 TARGET_NO_KERNEL_OVERRIDE := true
