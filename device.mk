@@ -417,16 +417,6 @@ PRODUCT_PACKAGES += \
 # Reduce system server verbosity.
 PRODUCT_SYSTEM_SERVER_DEBUG_INFO := false
 
-# Required for QPR3
-PRODUCT_PACKAGES += \
-    liblz4.vendor \
-    libmemunreachable.vendor \
-    libhidlbase_shim \
-    libjsoncpp.vendor \
-    libziparchive.vendor \
-    libsqlite.vendor \
-    libdumpstateutil.vendor
-
 # Secure Element
 PRODUCT_PACKAGES += \
     android.hardware.secure_element@1.2.vendor
@@ -441,11 +431,21 @@ PRODUCT_PACKAGES += \
     android.hardware.sensors-service.multihal \
     android.hardware.sensors@2.0-subhal-impl-1.0 \
     android.hardware.sensors@2.0-ScopedWakelock.vendor:64
-    libshim_sensors \
-    libpower.vendor 
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf
+
+# Shims
+PRODUCT_PACKAGES += \
+    android.hardware.sensors@1.0-convert-shared.vendor \
+    libpower.vendor \
+    liblz4.vendor \
+    libmemunreachable.vendor \
+    libhidlbase_shim \
+    libjsoncpp.vendor \
+    libziparchive.vendor \
+    libsqlite.vendor \
+    libdumpstateutil.vendor
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
