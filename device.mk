@@ -156,6 +156,9 @@ PRODUCT_PACKAGES += \
     libui.vendor \
     libdrm.vendor 
 
+PRODUCT_PACKAGES += \
+    ANGLE
+
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm-service.clearkey
