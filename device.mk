@@ -99,6 +99,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.1.vendor
 
+PRODUCT_PACKAGES += \
+   vendor.mediatek.hardware.bluetooth.audio@2.1.vendor:64 \
+   vendor.mediatek.hardware.bluetooth.audio@2.2.vendor:64
+
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1612
 TARGET_SCREEN_WIDTH := 720
