@@ -267,29 +267,27 @@ PRODUCT_PACKAGES += \
 PRODUCT_VENDOR_LINKER_CONFIG_FRAGMENTS += \
     $(LOCAL_PATH)/configs/linker.config.json
     
-# MediaCas
-PRODUCT_PACKAGES += \
-    android.hardware.cas@1.2-service-lazy
-
-# Media (C2)
+# Media
 PRODUCT_PACKAGES += \
     android.hardware.media.c2@1.0.vendor:64 \
     android.hardware.media.c2@1.1.vendor:64 \
     android.hardware.media.c2@1.2.vendor:64 \
-    android.hardware.media.omx@1.0-service \
+    android.hardware.cas@1.2-service-lazy \
     libcodec2_hidl@1.2.vendor:64 \
     libcodec2_hidl_plugin:64 \
     libcodec2_vndk.vendor:64 \
     libeffects:64 \
     libeffectsconfig.vendor:64 \
-    libavservices_minijail_vendor \
-    libstagefright_softomx_plugin.vendor \
-    libsfplugin_ccodec_utils.vendor \
-    libcodec2_soft_common.vendor \
-    libflatbuffers-cpp.vendor
+    libavservices_minijail_vendor:64 \
+    libstagefright_softomx_plugin.vendor:64 \
+    libsfplugin_ccodec_utils.vendor:64 \
+    libcodec2_soft_common.vendor:64 \
+    libflatbuffers-cpp.vendor:64
 
 PRODUCT_PACKAGES += \
-    libchrome.vendor
+    libchrome.vendor:64 \
+    libminijail:64 \
+    libminijail.vendor:64
 
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/seccomp,$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy) \
