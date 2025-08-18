@@ -21,9 +21,6 @@ vendor/lib64/vendor.mediatek.hardware.apuware.hmp@1.0.so
 vendor/lib64/vendor.mediatek.hardware.apuware.utils@2.0.so
 
 # Audio
-vendor/bin/audiocmdservice_atci
-vendor/bin/tran_tinymix
-vendor/etc/init/audiocmdservice_atci.rc
 vendor/lib/libbwc.so
 vendor/lib/libladder.so
 vendor/lib64/hw/audio.primary.mediatek.so
@@ -46,7 +43,6 @@ vendor/lib64/libaudioprimarydevicehalifclient.so
 vendor/lib64/libaudiosmartpamtk.so
 vendor/lib64/libaudiotoolkit_vendor.so
 vendor/lib64/libaudio_param_parser-vnd.so
-vendor/lib64/libtinycompress.so
 vendor/lib64/libaurisysdemo.so
 vendor/lib64/libbessound_hd_mtk_vendor.so
 vendor/lib64/libblisrc32_vendor.so
@@ -58,7 +54,6 @@ vendor/lib64/libmtklimiter_vendor.so
 vendor/lib64/libmtkshifter_vendor.so
 vendor/lib64/libnxp_extamp_intf.so
 vendor/lib64/librt_extamp_intf.so
-vendor/lib64/libaudiofoundation.so
 vendor/lib64/libspeech_enh_lib.so;DISABLE_CHECKELF
 vendor/lib64/libspeechparser_vendor.so
 vendor/lib64/libtinycompress.so
@@ -1194,7 +1189,6 @@ vendor/etc/vintf/manifest/manifest_cameraprovider.xml
 
 # Camera - Required files
 vendor/lib64/vendor.mediatek.hardware.mdmonitor@1.0.so
-vendor/lib64/vendor.mediatek.hardware.power@1.1.so
 vendor/lib64/lib3a.ae.pipe.so
 vendor/lib64/libaibld.so
 vendor/lib64/libaipe_bokeh.so
@@ -1257,7 +1251,6 @@ vendor/lib64/mt6789/libaibc_tuning_p2.so
 vendor/lib64/mt6789/libaibc_tuning_p3.so
 vendor/lib64/mt6789/libaibc_tuning_p4.so
 vendor/lib64/mt6789/libaidepth_tuning.so
-vendor/lib64/mt6789/libaiselector.so
 vendor/lib64/mt6789/libamipengine.so
 vendor/lib64/mt6789/libanc_night.so
 vendor/lib64/mt6789/libarcsoft_high_dynamic_range.so
@@ -1270,7 +1263,6 @@ vendor/lib64/mt6789/libcolorlevel.so
 vendor/lib64/mt6789/libdenoise.so
 vendor/lib64/mt6789/libdip_drv.so
 vendor/lib64/mt6789/libdip_postproc.so
-vendor/lib64/mt6789/libDR.so
 vendor/lib64/mt6789/libeffecthal.base.so
 vendor/lib64/mt6789/libeffect_hal.so
 vendor/lib64/mt6789/libeyedetector.so
@@ -1290,7 +1282,6 @@ vendor/lib64/mt6789/libimageio_plat_pipe.so
 vendor/lib64/mt6789/libitdfacebeauty.so
 vendor/lib64/mt6789/liblpcnr.so
 vendor/lib64/mt6789/libmagicsky_64.so
-vendor/lib64/mt6789/libmnl.so
 vendor/lib64/mt6789/libmorpho_HDSR.so
 vendor/lib64/mt6789/libmorpho_video_stabilizer.so;DISABLE_CHECKELF
 vendor/lib64/mt6789/libmpbase.so
@@ -1406,7 +1397,6 @@ vendor/lib64/libgralloc_metadata.so
 vendor/lib64/libgralloctypes_mtk.so
 vendor/lib64/libion_mtk.so
 vendor/lib64/libion_ulit.so
-vendor/lib64/libladder.so
 vendor/lib64/libmml.so
 vendor/lib64/libOpenCL.so
 vendor/lib64/libpqframework.so
@@ -1432,22 +1422,15 @@ vendor/lib64/vendor.mediatek.hardware.pq@2.7.so
 vendor/lib64/vendor.mediatek.hardware.pq@2.8.so
 vendor/lib64/vendor.mediatek.hardware.pq@2.9.so
 
-# Display Configs 
-vendor/etc/AbnormalDisplayLog_dynamic.xml
-vendor/etc/VideoLog_dynamic.xml
-vendor/etc/ft8725_fhdp_dsi_vdo_lce_inx_120hz_x6837_cust_color.xml
-vendor/etc/ft8725_fhdp_dsi_vdo_txd_inx_120hz_x6837_cust_color.xml
-vendor/etc/ili7807s_fhdp_dsi_vdo_tm_tm_120hz_x6837_cust_color.xml
-
 # DRM
 vendor/bin/hw/android.hardware.drm@1.4-service.widevine
 vendor/etc/init/android.hardware.drm@1.4-service.widevine.rc
 -vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.4-service.widevine.xml
--vendor/lib64/mediadrm/libwvdrmengine.so;REPLACEDEP=libprotobuf-cpp-full-3.9.1:libprotobuf-cpp-full-3.9.1-vendorcompat
+vendor/lib64/mediadrm/libwvdrmengine.so
 vendor/lib64/liboemcrypto.so
 vendor/lib64/libtlcWidevineModularDrm.so
 vendor/lib64/liburee_meta_drmkeyinstall.so
--vendor/lib64/libwvhidl.so;REPLACEDEP=libprotobuf-cpp-full-3.9.1:libprotobuf-cpp-full-3.9.1-vendorcompat
+vendor/lib64/libwvhidl.so
 
 # Fingerprint
 vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service
@@ -1463,7 +1446,6 @@ vendor/lib64/libgf_ca.so
 vendor/lib64/libgf_factory_test.so
 vendor/lib64/libgf_hal.so
 vendor/lib64/libgoodixhwfingerprint.so
-vendor/lib64/libtneclient.so
 vendor/lib64/libvendor.goodix.hardware.biometrics.fingerprint@2.1.so
 vendor/lib64/vendor.fpsensor.hardware.fpsensorhidlsvc@2.0.so
 
