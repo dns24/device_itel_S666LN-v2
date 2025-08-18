@@ -119,7 +119,6 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.6.vendor
 
 PRODUCT_PACKAGES += \
-    libshim_camera_metadata \
     libdng_sdk.vendor \
     libexpat.vendor \
     libexif.vendor \
@@ -470,20 +469,19 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libbase_shim \
     libprocessgroup_shim \
+    libcamera_metadata_shim \
     libstagefright_foundation-v33 \
-    libhidlbase-v32.vendor \
-    libhidlbase-v31 \
-    libutils-v31
-
-PRODUCT_COPY_FILES += \
-    prebuilts/vndk/v31/arm64/arch-arm-armv8-a/shared/vndk-core/libbinder.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbinder-v31.so \
-    prebuilts/vndk/v31/arm64/arch-arm-armv8-a/shared/llndk-stub/liblog.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblog-v31.so \
-    prebuilts/vndk/v31/arm64/arch-arm64-armv8-a/shared/vndk-core/libbinder.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbinder-v31.so \
-    prebuilts/vndk/v31/arm64/arch-arm64-armv8-a/shared/llndk-stub/liblog.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblog-v31.so
+    libutils-v32 \
+    libhidlbase-v32 \
+    libbinder-v32
 
 PRODUCT_PACKAGES += \
+    libutils-v31 \
+    libhidlbase-v31 \
+    libbinder-v31 \
     libunwindstack.vendor \
     libutilscallstack.vendor
+
 
 # vndservice
 PRODUCT_PACKAGES += \
