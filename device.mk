@@ -69,17 +69,24 @@ PRODUCT_PACKAGES += \
     audio.usb.default:64
 
 PRODUCT_PACKAGES += \
-    audio_policy.stub \
-    libopus.vendor \
-    audioclient-types-aidl-cpp.vendor \
-    libaudioroute.vendor \
-    libaudiofoundation.vendor \
-    libbluetooth_audio_session \
-    libnbaio_mono \
-    libtinycompress \
-    libdynproc \
-    libhapticgenerator \
-    libprocessgroup.vendor
+    audio_policy.stub:64 \
+    libopus.vendor:64 \
+    audioclient-types-aidl-cpp.vendor:64 \
+    libaudioroute.vendor:64 \
+    libaudiofoundation.vendor:64 \
+    libbundlewrapper:64 \
+    libbluetooth_audio_session:64 \
+    libaudiopreprocessing:64 \
+    libalsautils:64 \
+    libdownmix:64 \
+    libeffectproxy:64 \
+    libnbaio_mono:64 \
+    libtinycompress:64 \
+    libdynproc:64 \
+    libhapticgenerator:64 \
+    libldnhncr:64 \
+    libreverbwrapper:64 \
+    libprocessgroup.vendor:64
 
 PRODUCT_PACKAGES += \
     DSPVolumeSynchronizer \

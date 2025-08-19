@@ -29,20 +29,16 @@ vendor/lib64/libMtkSpeechEnh.so
 vendor/lib64/lib_iir.so
 vendor/lib64/lib_speech_enh.so
 vendor/lib64/libalsautils.so:vendor/lib64/libalsautils-v31.so;FIX_SONAME
-vendor/lib64/libaudioclient_aidl_conversion.so
+vendor/lib64/libaudio_param_parser-vnd.so
 vendor/lib64/libaudiocompensationfilterc.so
-vendor/lib64/libaudiocompensationfilter_vendor.so
-vendor/lib64/libaudiocomponentenginec.so
 vendor/lib64/libaudiocomponentengine_vendor.so
+vendor/lib64/libaudiocomponentenginec.so
 vendor/lib64/libaudiocustparam_vendor.so
 vendor/lib64/libaudiodcrflt_vendor.so
 vendor/lib64/libaudiofmtconv.so
-vendor/lib64/libaudiofoundation.so
 vendor/lib64/libaudioloudc.so
 vendor/lib64/libaudioprimarydevicehalifclient.so
-vendor/lib64/libaudiosmartpamtk.so
 vendor/lib64/libaudiotoolkit_vendor.so
-vendor/lib64/libaudio_param_parser-vnd.so
 vendor/lib64/libaurisysdemo.so
 vendor/lib64/libbessound_hd_mtk_vendor.so
 vendor/lib64/libblisrc32_vendor.so
@@ -52,11 +48,9 @@ vendor/lib64/libladder.so
 vendor/lib64/libmsbc_mtk.so
 vendor/lib64/libmtklimiter_vendor.so
 vendor/lib64/libmtkshifter_vendor.so
-vendor/lib64/libnxp_extamp_intf.so
 vendor/lib64/librt_extamp_intf.so
-vendor/lib64/libspeech_enh_lib.so;DISABLE_CHECKELF
+vendor/lib64/libspeech_enh_lib.so;FIX_SONAME
 vendor/lib64/libspeechparser_vendor.so
-vendor/lib64/libtinycompress.so
 vendor/lib64/vendor.mediatek.hardware.audio@6.1.so
 vendor/lib64/vendor.mediatek.hardware.audio@7.1.so
 
@@ -1450,15 +1444,16 @@ vendor/lib64/libvendor.goodix.hardware.biometrics.fingerprint@2.1.so
 vendor/lib64/vendor.fpsensor.hardware.fpsensorhidlsvc@2.0.so
 
 # Firmware
-vendor/firmware/BT_FW.cfg
-vendor/firmware/Conf_MultipleTest.ini
-vendor/firmware/WIFI_RAM_CODE_soc2_2_1d_1.bin
-vendor/firmware/WIFI_RAM_CODE_soc2_2_1e_1.bin
-vendor/firmware/WMT_SOC.cfg
+vendor/firmware/aw8622x_haptic.bin
+vendor/firmware/aw8622x_osc_rtp_12K_10s.bin
+vendor/firmware/aw8622x_rtp.bin
 vendor/firmware/aw8624_haptic.bin
 vendor/firmware/aw8624_osc_rtp_24K_5s.bin
+vendor/firmware/aw8624_rtp.bin
 vendor/firmware/aw8624_rtp_lighthouse.bin
 vendor/firmware/aw8624_rtp_silk.bin
+vendor/firmware/BT_FW.cfg
+vendor/firmware/Conf_MultipleTest.ini
 vendor/firmware/fm_cust.cfg
 vendor/firmware/fs1599.fsm
 vendor/firmware/ft8057s_dpt_fw.bin
@@ -1553,6 +1548,9 @@ vendor/firmware/soc_fm_v1_coeff.bin
 vendor/firmware/soc_fm_v1_patch.bin
 vendor/firmware/td4160_lce_fw.img
 vendor/firmware/wifi.cfg
+vendor/firmware/WIFI_RAM_CODE_soc2_2_1d_1.bin
+vendor/firmware/WIFI_RAM_CODE_soc2_2_1e_1.bin
+vendor/firmware/WMT_SOC.cfg
 
 # Fuelgauge
 vendor/bin/fuelgauged
@@ -1731,7 +1729,7 @@ vendor/lib64/libasn1c_mdmi.so
 vendor/lib64/libcmdl.so
 vendor/lib64/libcmdl_ndk.mtk.vndk.so
 vendor/lib64/libneuron_graph_delegate.mtk.so
-vendor/lib64/libnir_neon_driver_ndk.mtk.vndk.so
+vendor/lib64/libnir_neon_driver_ndk.mtk.vndk.so;FIX_SONAME
 vendor/lib64/libnpagent.so
 vendor/lib64/libnpagent_server.so
 vendor/lib64/libtflite_mtk.so
@@ -1956,4 +1954,4 @@ vendor/lib64/vendor.transsion.hardware.tranlogconfig@1.0.so
 vendor/bin/wlan_assistant
 vendor/etc/init/init.wlan_drv.rc
 vendor/etc/init/wlan_assistant.rc
-vendor/lib64/libwifi-hal.so:vendor/lib64/libwifi-hal-mtk.so
+vendor/lib64/libwifi-hal.so:vendor/lib64/libwifi-hal-mtk.so;FIX_SONAME
