@@ -470,7 +470,7 @@ PRODUCT_SYSTEM_SERVER_COMPILER_FILTER := speed-profile
 
 # Vibrator
 PRODUCT_PACKAGES += \
-    android.hardware.vibrator-service.mediatek
+    android.hardware.vibrator-service.transsion
 
 # VNDK
 PRODUCT_PACKAGES += \
