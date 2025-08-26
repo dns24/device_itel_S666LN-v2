@@ -1353,6 +1353,8 @@ vendor/bin/hw/vendor.mediatek.hardware.pq@2.2-service
 vendor/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc
 vendor/etc/init/vendor.mediatek.hardware.pq@2.2-service.rc
 -vendor/etc/vintf/manifest/manifest_hwcomposer.xml
+vendor/etc/AbnormalDisplayLog_dynamic.xml
+vendor/etc/VideoLog_dynamic.xml
 vendor/etc/meow.cfg
 vendor/lib/egl/egl.cfg
 vendor/lib/mt6789/arm.graphics-V1-ndk_platform.so
