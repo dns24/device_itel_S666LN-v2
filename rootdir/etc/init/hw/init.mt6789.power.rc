@@ -55,6 +55,9 @@ on init
     # khugepaged tuning
     write /sys/kernel/mm/transparent_hugepage/enabled "never"
 
+    # Set teo as cpu idle governor
+    write /sys/devices/system/cpu/cpuidle/current_governor teo
+
 on boot
     # boot perf. tune
     write /dev/cpuctl/system/cpu.uclamp.min 100
