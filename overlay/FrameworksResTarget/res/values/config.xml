@@ -244,10 +244,10 @@
     </array>
 
     <array name="config_sfps_sensor_props_0">
-          <item>local:0</item> <!-- displayId -->
-          <item>720</item> <!-- sensorLocationX -->
-          <item>710</item>  <!-- sensorLocationY -->
-          <item>210</item>  <!-- sensorRadius -->
+        <item>local:0</item>     <!-- displayId -->
+        <item>720</item> <!-- sensorLocationX -->
+        <item>640</item> <!-- sensorLocationY -->
+        <item>100</item>  <!-- sensorRadius -->
     </array>
 
      <!-- Display settings screen, Color mode options. Must be the same length and order as
