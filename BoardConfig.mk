@@ -6,7 +6,6 @@
 
 DEVICE_PATH := device/itel/S666LN
 KERNEL_PATH := $(DEVICE_PATH)-kernel
-CONFIGS_PATH := $(DEVICE_PATH)/configs
 
 # Architecture
 TARGET_ARCH := arm64
@@ -138,8 +137,9 @@ TARGET_BOARD_PLATFORM := mt6789
 BOARD_HAS_MTK_HARDWARE := true
 
 # Properties
-TARGET_SYSTEM_PROP += $(CONFIGS_PATH)/properties/system.prop
-TARGET_VENDOR_PROP += $(CONFIGS_PATH)/properties/vendor.prop
+TARGET_PRODUCT_PROP += $(DEVICE_PATH)/configs/properties/product.prop
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/configs/properties/system.prop
+TARGET_VENDOR_PROP += $(DEVICE_PATH)/configs/properties/vendor.prop
 
 # Recovery
 BOARD_MOVE_GSI_AVB_KEYS_TO_VENDOR_BOOT := true
@@ -192,11 +192,11 @@ BOARD_VNDK_VERSION := current
 
 # VINTF
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
-	$(CONFIGS_PATH)/vintf/framework_compatibility_matrix.xml \
+	$(DEVICE_PATH)/configs/vintf/framework_compatibility_matrix.xml \
 	hardware/mediatek/vintf/mediatek_framework_compatibility_matrix.xml \
 	vendor/lineage/config/device_framework_matrix.xml
-DEVICE_MANIFEST_FILE := $(CONFIGS_PATH)/vintf/manifest.xml
-DEVICE_MATRIX_FILE := $(CONFIGS_PATH)/vintf/compatibility_matrix.xml
+DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/configs/vintf/manifest.xml
+DEVICE_MATRIX_FILE := $(DEVICE_PATH)/configs/vintf/compatibility_matrix.xml
 
 # Wi-Fi
 WPA_SUPPLICANT_VERSION := VER_0_8_X
