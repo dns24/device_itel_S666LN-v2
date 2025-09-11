@@ -1705,8 +1705,13 @@ vendor/lib64/libmvpuop_mtk_nn.so
 vendor/lib64/libvpu5.so
 
 # Misc
+vendor/bin/mt6660_calibration
+vendor/bin/rt5512_calibration
 vendor/etc/init/init.otg.rc
 vendor/lib/libimsg_log.so
+vendor/lib64/libdynamiclog.so
+vendor/lib64/libmmprofile.so
+vendor/lib64/libmtk_bsg.so
 vendor/lib64/libimsg_log.so
 
 # MMS
