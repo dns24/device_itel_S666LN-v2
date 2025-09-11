@@ -20,9 +20,9 @@ bluetooth.profile.pbap.server.enabled=true
 bluetooth.profile.sap.server.enabled=true
 
 # Blur
+ro.launcher.blur.appLaunch=0
 ro.sf.blurs_are_expensive=1
 ro.surface_flinger.supports_background_blur=1
-ro.launcher.blur.appLaunch=0
 
 # Camera
 persist.vendor.camera.privapp.list=org.lineageos.aperture
@@ -34,7 +34,6 @@ dalvik.vm.dex2oat64.enabled=true
 
 # Display
 debug.sf.enable_transaction_tracing=false
-debug.sf.hwc.min.duration=17000000
 debug.sf.predict_hwc_composition_strategy=0
 ro.opengles.version=196610
 vendor.debug.sf.display_dejitter=0
@@ -44,6 +43,10 @@ persist.dbg.volte_avail_ovr=1
 persist.dbg.vt_avail_ovr=1
 persist.dbg.wfc_avail_ovr=1
 
+# Kernel
+ro.kernel.zio=38,108,105,16
+ro.iorapd.enable=false
+
 # Media
 debug.stagefright.c2inputsurface=-1
 media.stagefright.thumbnail.prefer_hw_codecs=true
@@ -52,10 +55,25 @@ ro.vendor.mtk_omacp_support=1
 ro.vendor.mtk_telephony_add_on_policy=0
 
 # Radio
+persist.sys.radio.force_lte_ca=true
+ro.vendor.mtk_telephony_add_on_policy=0
 vendor.rild.libargs=-d /dev/ttyC0
 vendor.rild.libpath=mtk-ril.so
-ro.vendor.mtk_telephony_add_on_policy=0
-persist.sys.radio.force_lte_ca=true
+
+# SurfaceFlinger
+debug.sf.auto_latch_unsignaled=false
+debug.sf.early.app.duration=20000000
+debug.sf.early.sf.duration=27600000
+debug.sf.earlyGl.app.duration=20000000
+debug.sf.earlyGl.sf.duration=27600000
+debug.sf.enable_gl_backpressure=0
+debug.sf.enable_transaction_tracing=false
+debug.sf.hwc.min.duration=23000000
+debug.sf.latch_unsignaled=true
+debug.sf.late.app.duration=20000000
+debug.sf.late.sf.duration=27600000
+debug.sf.predict_hwc_composition_strategy=0
+debug.sf.use_phase_offsets_as_durations=1
 
 # Wifi
 mediatek.wlan.ctia=0
@@ -65,12 +83,6 @@ ro.mediatek.wlan.wsc=1
 wifi.direct.interface=p2p0
 wifi.interface=wlan0
 wifi.tethering.interface=ap0
-
-# USB
-ro.sys.usb.bicr=no
-ro.sys.usb.charging.only=yes
-ro.sys.usb.mtp.whql.enable=0
-ro.sys.usb.storage.type=mtp
 
 # Zygote
 zygote.critical_window.minute=10
