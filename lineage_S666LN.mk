@@ -29,21 +29,3 @@ BUILD_FINGERPRINT := Itel/S666LN-OP/itel-S666LN:13/TP1A.220624.014/240513V902:us
 
 # Time
 LINEAGE_VERSION_APPEND_TIME_OF_DAY := true
-
-# Chipset/Maintainer properties (ro.rising.chipset/ro.rising.maintainer) 
-# Set RISING_MAINTAINER for version control 
-# (Optional if builder is setting properties via init_<device>.cpp)
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    RisingChipset="MediaTek Helio G99 Ultimate" \
-    RisingMaintainer="fjrXTR"
-
-# Disable/enable blur support, false by default
-TARGET_ENABLE_BLUR := true
-
-# Whether to ship aperture camera, false by default
-PRODUCT_NO_CAMERA := false
-
-# Whether to ship lawnchair launcher, false by default
-TARGET_PREBUILT_LAWNCHAIR_LAUNCHER := true
-WITH_GMS := true
-TARGET_USES_PICO_GAPPS := true
