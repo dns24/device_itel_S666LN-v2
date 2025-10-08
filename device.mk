@@ -486,10 +486,7 @@ PRODUCT_PACKAGES += \
     libbase_shim \
     libprocessgroup_shim \
     libcamera_metadata_shim \
-    libstagefright_foundation-v33 \
-    libutils-v32 \
-    libhidlbase-v32 \
-    libbinder-v32
+    libstagefright_foundation-v33
 
 PRODUCT_PACKAGES += \
     libutils-v31 \
@@ -497,7 +494,6 @@ PRODUCT_PACKAGES += \
     libbinder-v31 \
     libunwindstack.vendor \
     libutilscallstack.vendor
-
 
 # vndservice
 PRODUCT_PACKAGES += \
