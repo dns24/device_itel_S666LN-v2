@@ -34,6 +34,7 @@ VOLTAGE_VERSION_APPEND_TIME_OF_DAY := true
 TARGET_BOOT_ANIMATION_RES := 720
 
 # VoltageOS flags.
+PERF_ANIM_OVERRIDE := true # MTK Fix Perf
 TARGET_FACE_UNLOCK_SUPPORTED := true
 
 # VoltageOS CPUsets configuration.
